@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/foms.css">
+    <title>Digitalize seu restaurante</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Digitalize seu restaurante com a Quickly</h1>
+        <form id="restaurant-form">
+            <label for="nome-restaurante">Nome do seu restaurante</label>
+            <input type="text" id="nome-restaurante" name="nome-restaurante">
+            
+            <label for="local-fisico">Restaurante atende em local físico?</label>
+            <input type="text" id="local-fisico" name="local-fisico">
+            
+            <label for="nome-sobrenome">Nome e Sobrenome</label>
+            <input type="text" id="nome-sobrenome" name="nome-sobrenome">
+            
+            <label for="celular">Seu celular</label>
+            <input type="text" id="celular" name="celular">
+            
+            <label for="email">Seu e-mail</label>
+            <input type="email" id="email" name="email">
+            
+            <label for="observacoes">Observações (opcional)</label>
+            <textarea id="observacoes" name="observacoes" rows="4"></textarea>
+            
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+    <div class="message" id="message">
+        FORMULÁRIO ENTREGUE
+    </div>
+    <script>
+        document.getElementById('restaurant-form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Impede o envio do formulário
+            var message = document.getElementById('message');
+            message.style.display = 'block';
+            setTimeout(function() {
+                message.style.display = 'none';
+            }, 3000); // Esconde a mensagem após 3 segundos
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,396 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+#Cabeçario_landing{
+    border-bottom: 1px solid black;
+    width: 100%;
+    height: 5rem;
+}
+
+.logo_header{
+    height: 12.5rem;
+    width: 15rem;
+    position: relative;
+    left: 1.3rem;
+}
+
+.escrita_header{
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+    position: relative;
+    top: -10rem;
+    margin-left: 17rem;
+    
+}
+
+.escrita_header a {
+    color: inherit;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    cursor: pointer;
+}
+
+.link-1 {
+    top: 50%; /* Posiciona o primeiro link 50% da tela */
+  }
+
+.seletor_de_idioma {
+    position: relative;
+    width: 10rem;
+    top: -13.3rem;
+    left: 23rem;
+    height: 5rem;
+    font-family: Arial, sans-serif;
+    margin: 1.5rem 0 0 22rem; /* Usando margin para espaço */
+}
+
+.caixa_idioma_principal {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+    color: black;
+    cursor: pointer;
+    border-radius: 5px;
+    border: #333 solid 1px;
+}
+
+.caixa_idioma_principal img {
+    width: 1rem;
+    height: 1rem;
+    margin-right: 10px;
+}
+
+.caixa_idioma {
+    display: none; /* Inicialmente escondido */
+    position: absolute;
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 10000; /* Z-index alto para sobrepor outros elementos */
+}
+
+.idiomas {
+    display: flex;
+    align-items: center;
+    padding: 0.8rem;
+    cursor: pointer;
+    color: #333; 
+    z-index: 10001; /* Z-index alto para os itens do menu */
+}
+
+.idiomas:hover {
+    background-color: #f0f0f0;
+}
+
+.idiomas img {
+    width: 1rem;
+    height: 1rem;
+    margin-right: 0.8rem;
+}
+
+.colunas_primaria {
+    z-index: 1; /* Mantenha um z-index baixo para garantir que as colunas fiquem atrás */
+}
+
+.quadrado_primario_pequeno {
+    position: absolute; /* Para mover facilmente */
+    top: 5rem; /* Ajuste a posição vertical conforme necessário */
+    left: 30rem; /* Ajuste a posição horizontal conforme necessário */
+    width: 2rem;
+    height: 2rem;
+    background-color: #FF3131;
+}
+
+.quadrado_primario_maior {
+    position: absolute; /* Para mover facilmente */
+    top: 7rem; 
+    left: 32rem; /* Ajuste a posição horizontal conforme necessário */
+    width: 45.75%;
+    height: 2rem;
+    background-color: #FF3131;
+}
+
+
+.text_landing_page{
+    font-size: 1.5rem;
+    margin-left: 7rem;
+    margin-top: 7rem;
+}
+
+.text_landing_page h1 span{
+    color: red;
+}
+
+.botao-contratar {
+    margin-left: 5rem;
+    margin-top: 2rem;
+    background-color: #ff3b3b; /* Cor vermelha */
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 200px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 0px 4px 0px #e62e2e; /* Sombra para dar o efeito 3D */
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Efeito ao passar o mouse */
+.botao-contratar:hover {
+    transform: translate3d(-4px), tr; /* Move o botão para cima */
+    box-shadow: 0px 6px 0px #e62e2e, 0px 10px 10px rgba(0, 0, 0, 0.2); /* Ajusta a sombra */
+}
+
+/* Efeito ao pressionar */
+.botao-contratar:active {
+    transform: translateY(0); /* Volta o botão à posição original */
+    box-shadow: 0px 2px 0px #e62e2e; /* Reduz a sombra */
+}
+
+.quadrado_segunda_pequeno{
+    margin-top: 4rem;
+    margin-left: 40rem;
+    width: 3.75rem;
+    height: 3.75rem;
+    background-color: #FA6900;
+}
+
+.quadrado_segunda_grande{
+    width: 40rem;
+    height: 4rem;
+    background-color: #FA6900;
+}
+
+.quem_somos{
+    display: flex;
+    margin-left: 4rem;
+    align-items: center;
+    flex-direction: column;
+    width: 29rem;
+}
+
+.quem_somos h1{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.quem_somos_maior{
+    display: flex;
+}
+
+#Pessoas_vermelhas{
+    transform: translate(2rem, 2.5rem);
+    width: 20rem;
+}
+
+.reserva{
+    display: flex;
+}
+
+#Pessoas{
+    width: 30rem;
+    margin-left: 4rem;
+}
+
+.text_reserva h2{
+    display: flex;
+    align-items: center;
+    transform: translate(-2rem, 2rem);
+    margin-bottom: 3rem;
+}
+
+.text_reserva h3 {
+    margin-bottom: 3rem;
+    margin-left: 15px;
+    font-size: 1.8rem;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.text_reserva p {
+    font-size: 15px;
+}
+
+.text_reserva p span{
+    color: #FA6900;
+}
+
+.lista_de_espera{
+}
+
+.text_lista_espera h2{
+    display: flex;
+    align-items: center;
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+}
+
+.text_lista_espera h2 img {
+    width: 100px;
+}
+
+.text_lista_espera h3{
+    margin-left: 8rem;
+    font-size: 1.4rem;
+    color: rgba(0, 0, 0, 0.7);
+    transform: translate(0, -2rem);
+}
+
+.text_lista_espera p{
+    width: 30rem;
+    margin-left: 4rem;
+}
+
+.Quadrado_lista_espera img{
+    width: 10rem;
+    transform: translate(7rem, -5rem);
+}
+
+.Quadrado_lista_espera{
+    background-color: #FF5252;
+    width: 23rem;
+    height: 17rem;
+    transform: translate(35.9rem, -10rem);
+}
+
+#Amplie{
+    font-size: 3rem;
+    width: 40rem;
+    margin-left: 2rem;
+    transform: translate(0, -7rem);
+}
+
+#Amplie span {
+    color: #FF5252;
+}
+
+.quadrado_ofereca{
+    background-color: #FF5252;
+    width: 44rem;
+    height: 18rem;
+    margin-top: 50px;
+    transform: translate(0, -7rem);
+}
+
+.highlighted-text {
+    font-size: 2rem;
+    line-height: 1.2;
+    font-weight: bold;
+    color: #ffffff;
+    margin-left: 20px;
+    transform: translate(2rem, 3rem);
+}
+
+  /* Botão */
+.cta-button {
+    display: inline-block;
+    margin-top: 70px;
+    margin-left: 50px;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    color: #FA6900; /* Cor do texto igual ao fundo */
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 20px;
+    transition: 0.2s;
+}
+
+.cta-button:hover {
+    background-color: #ffffff;
+    color: #FA6900;
+    border: 2px solid #ffffff;
+    padding: 11px 22px;
+}
+
+  /* Elementos decorativos */
+.decorative-box {
+    width: 40px;
+    height: 40px;
+    background-color: #FF3131;
+    position: absolute;
+    top: 51%;
+    right: 15%;
+}
+
+.decorative-box2{
+    width: 105px;
+    height: 30px;
+    background-color: #FF3131;
+    position: absolute;
+    top: 65%;
+    right: 0%;
+}
+
+.decorative-line {
+    width: 10px;
+    height: 40px;
+    background-color: #FF9800; /* Linha decorativa laranja */
+    position: absolute;
+    bottom: 0%;
+    left: 23.5%;
+}
+
+.decorative-line2 {
+    width: 100px;
+    height: 10px;
+    background-color: #FF9800; /* Linha decorativa laranja */
+    position: absolute;
+    bottom: 14.3%;
+    left: 25%;
+}
+
+.decorative-line3 {
+    width: 30px;
+    height: 10px;
+    background-color: #FF9800; /* Linha decorativa laranja */
+    position: absolute;
+    bottom: 18%;
+    left: 39.2%;
+}
+
+.rede_sociais{
+    margin-left: 40rem;
+    transform: translate(0, -7rem);
+    gap: 20px;
+}
+
+#facebook{
+    width: 50px;
+    margin-right: 10px;
+    transition: 0.2s;
+}
+
+#facebook:hover{
+    width: 60px;
+    margin-right: 10px;
+}
+
+#insta{
+    width: 50px;
+    transition: 0.2s;
+}
+
+#insta:hover{
+    width: 60px;
+    margin-right: 10px;
+}
+
+.text_footer{
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+}
+
+.text_footer h3{
+    font-size: 20px;
+    margin-bottom: 1rem;
+}
+
+.text_footer p a {
+    color: black;
+    text-decoration: none;
+}
