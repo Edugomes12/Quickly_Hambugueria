@@ -1,0 +1,167 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Teko", sans-serif;
+}
+
+/* Cabeçalho */
+#header {
+    position: relative;
+    background-color: #502017;
+    display: block;
+    flex-direction: column; /* Organiza em uma coluna */
+    text-align: center;
+    padding: 20px;
+    border-bottom: 3px dotted white;
+}
+
+.hashtag{
+    font-family: "charm", sans-serif;
+    color: hsla(60, 80%, 49%, 0.84); 
+    font-size: 2rem;
+    
+}
+
+header .logo {
+    position: absolute; /* Posiciona a logo de forma absoluta dentro do cabeçalho */
+    top: -40px; /* Ajusta a distância da parte superior */
+    left: 10px; 
+    max-width: 150px; /*tamanho da logo*/
+    height: auto; /* Mantém a proporção da altura da logo */
+}
+
+header h1 {
+    color: #d1c1be;
+    text-align: center;
+    margin-bottom: -15px;
+    margin-top: -5px;
+}
+
+
+header p {
+    color: hsl(9, 96%, 44%);
+    background-color: black;
+    padding: 10px;
+    width: 80%; /* Largura do parágrafo */
+    max-width: 400px; /* Largura máxima */
+    border-radius: 20px; /* Bordas arredondadas */
+    font-family: "Teko", sans-serif;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1rem;
+    display: inline-block; /* Exibe como um bloco em linha */
+    margin-top: 10px;
+}
+
+header img {
+    position: absolute;
+    width: 200px;
+    right: 10px; 
+    top: 20px; 
+    max-width: 20%;
+}
+
+
+.content {
+    color: #d1c1be;
+    background-color: black;
+    padding-bottom: 30px;
+}
+
+
+.intro {
+    font-size: 1.2rem;
+    text-align: center;
+    padding-top: 25px;
+    line-height: 1.6; /* Altura da linha */
+    border-bottom: 3px dotted white;
+    max-width: 600px;
+    margin: 0 auto; /* Centraliza o conteúdo */
+}
+
+.hamburguer {
+    width: 230px;
+    position: absolute;
+    left: 0; /* Distância à esquerda */
+    top: 40px; /* Distância ao topo */
+}
+
+/* Etapas */
+.etapas {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    padding: 10px 110px;
+}
+
+.etapa {
+    background-color: #f8c146;
+    color: #1d1d1d;
+    padding: 10px;
+    border-radius: 35px;
+    width: 15%;
+    text-align: center;
+    margin: 20px;
+    transition: 0.3s ease; /* Efeito de transição para animação */
+}
+
+.etapa:hover {
+    transform: scale(1.2); /* Aumenta o tamanho da etapa */
+}
+
+.etapa span {
+    font-size: 3rem;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.etapa p {
+    font-size: 1.4rem;
+    line-height: 1.5;
+    margin-top: 10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    background-color: #b02a2a; 
+    color: white; 
+    font-size: 1.2rem; 
+    padding: 15px 30px; 
+    border: none; /* Remove a borda padrão */
+    border-radius: 10px; 
+    cursor: pointer; /* Muda o cursor para pointer */
+    display: block; /* Exibe como um bloco */
+    margin: 30px auto; /* Centraliza o botão*/
+    transition: all 0.3s ease; /* Transição suave para todas as propriedades */
+}
+
+button:hover {
+    background-color: #a12828; /* Muda a cor do botão ao passar o mouse */
+    transform: scale(1.1); /* Aumenta o tamanho do botão */
+    opacity: 0.9; /* Leva uma transparência para o botão ao passar o mouse */
+}
+
+/* Footer */
+#footer {
+    background-color: #502017;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    border-top: 3px dotted white;
+}
+
+.media_social a{
+    padding: 20px;
+    display: inline; /* Exibe os ícones em linha */
+    justify-content: center;
+}
+
+
+
+
+
